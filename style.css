@@ -373,8 +373,8 @@ header.sticky .nav-bar {
 }
 
 .about-info .description h3 {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 1.9em;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
@@ -1367,16 +1367,43 @@ footer a {
   }
 
   .home-container .home-img img {
-    width: 65%;
-    transform: translate(80px, -180px);
+    width: 50%;
+    transform: translate(80px, -230px);
   }
 
   .home .home-container .info {
     font-size: o.8rem;
   }
 
+  .home-container .info h2 {
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 70px;
+  }
+  
+  .home-container .info h3 {
+    color: var(--third-color);
+    font-feature-settings: 1.3em;
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .home .home-container .info p {
+    font-size: var(--normal-font-size);
+    line-height: 2rem;
+  }
+
   .media-icons {
-    margin-bottom: 80px;
+    margin-bottom: 10px;
+  }
+
+  .education {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
   }
 
   /*=======Get-in-touch section=======*/
@@ -1407,9 +1434,9 @@ footer a {
   .about-info .description {
     max-width: 600px;
   }
-  
-  .about-info .description h3 {
-    font-size: 2em;
+
+  .about-info .description h3 span {
+    font-size: 1em;
     font-weight: 600;
     margin-bottom: 10px;
   }
@@ -1430,6 +1457,7 @@ footer a {
     margin-bottom: 15px;
     padding-bottom: 25px;
     border-bottom: 2px solid var(--line-color);
+    line-height: 2rem;
   }
   
   .about-info .professional-list {
@@ -1457,6 +1485,29 @@ footer a {
   }
 
   .about-info ul {
-    flex-direction: column;
+    flex-direction: row;
+    font-size: 8px;
   }
-}
+
+  .portfolio h5 {
+    font-size: 20px;
+  }
+
+  /*=======Our clients=======*/
+  .swiper-slide .client-img {
+    flex-direction: column;
+    max-width: 80%;
+    border-radius: 200%;
+  }
+
+  .client-details p {
+    text-align: center;
+    font-size: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .footer-copyright p {
+    text-align: center;
+  }
+  }
